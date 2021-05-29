@@ -1,0 +1,194 @@
+@import url(./fonts.css);
+
+@import url(./partials/_variables.css);
+
+@import url(./partials/_global.css);
+
+@font-face{
+    font-family: "montserrat";
+    src: "../fonts/Montserrat/Montserrat-Regular-ttf";
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+/* navbar */
+.header_area .main-menu .navbar .navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;  
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 10rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--montserrat);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 22%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 4rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 4rem 1rem;
+    width: 90rem;
+}
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+    padding-top: 10rem ;
+}
+
+.site-main .about-area .about-image img{
+    padding-left: 3rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 40px / 52px var(--montserrat);
+    letter-spacing: 7px;
+}
+
+.site-main .skill-area {
+    padding: 1rem 12rem;
+    margin-bottom: 4rem;
+}
+
+.site-main .skill-area .first-row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.site-main .skill-area .first-row .col-lg-4 > .single-skill {
+    border: 0px solid var(--border-color);
+    text-align: center;
+    padding: 1.9rem 0.7rem;
+    margin: 0.5rem 0;
+    width: 300px;
+    height: 110px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}  
+
+.site-main .skill-area .first-row .col-lg-4 > .single-skill > img{
+    width: 110px;
+    height: 60px;
+}
+
+.site-main .skill-area .first-row .col-lg-4 > .single-skill > img:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.5);
+    transition-duration: 0.3s;
+}
+
+.site-main .skill-area .first-row .col-lg-4 > .single-skill:hover > img{
+    filter: brightness(1.35);
+}
+
+.site-main .skill-area .skills-area {
+    padding-left: 1rem; 
+    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 20rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.site-main .skill-area .skills-area  span{
+    display: block;
+}
+
+.site-main .skill-area .skills-area .bg-panel {
+    position: absolute;
+    left: -190px;
+    top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 300px;
+}
+
+.site-main .project-area{
+    padding: 6rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--montserrat);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 2rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--montserrat);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+footer.footer-area{
+    padding: 3rem 0;
+    background: url(../img/footer-bg.png) no-repeat ;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/30px var(--montserrat);
+}
+
+footer.footer-area .social a > i{
+    font-size: 25px;
+    padding: 2rem;
+    color: #b1afaf;
+}
+
+footer.footer-area .social a > i:hover {
+    color: rgb(0, 110, 255);
+    transition-duration: 0.3s;
+}
